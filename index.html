@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <!-- add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./Assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./Assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./Assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./Assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./Assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./Assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./Assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./Assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./Assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./Assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Nhúng font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bài cá nhân môn R của Khánh</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page--0">
+        <div class="p0--bg">
+          <img src="./Assets/img/page0.jpg" alt="" class="p0--backg">
+        </div>
+        <div class="p0--intro  animate__animated animate__backInDown">
+          <h1 class="intro--header">Introduction to R </h1>
+          <h2 class="p0--detai">Analysis of meteorological factors affecting rainfall in Hanoi (2015–2024)</h2>
+          <div class="p0--infor">
+            <p class="name">Pham Ngo Lam Khanh</p>
+            <p class="bft65a">Fintech 65A</p>
+            <p class="stuID">11230977</p>
+          </div>
+        </div>
+      </div>
+      <div class="page--1">
+        <div class="page--1__left">
+          <div class="page--1__header" >
+            <h1 class="data--intro">Data Introduction</h1>
+          </div>
+          <div class="page--1__objective"  >
+            <div class="obj__header">Objective</div>
+            <p class="obj__desc">
+              - Build a regression model to predict the probability of rain
+              based on meteorological factors.
+            </p>
+          </div>
+          <div class="page--1__rsqt">
+            <div class="rsqt__header">Research question</div>
+            <p class="rsqt__desc">
+              - This study aims to examine which meteorological factors
+              significantly affect daily precipitation in Hanoi from 2015 to
+              2024.
+            </p>
+            <p class="rsqt__desc rsqt__2">
+              - Specifically, it investigates how temperature, humidity, wind
+              speed, cloud cover, precipitation probability, and visibility
+              contribute to variations in rainfall amounts.
+            </p>
+          </div>
+          <div class="page--1__src"  >
+            <div class="scr__header">Data Source: <a href="https://www.kaggle.com/datasets/kienngx/hanoi-temperature-in-10-years-112015-112025?resource=download">Kaggle</a></div>
+          </div>
+        </div>
+        <div class="page--1__right">
+          <div class="page--1__about"  >About Dataset</div>
+          <div class="page--1__dataset" >
+            <div class="dataset__header">Dataset</div>
+            <p class="dataset__desc">
+              - The data in the study were collected from Kaggle Data for the
+              Hanoi area, period 2015–2024.
+            </p>
+            <p class="dataset__desc dataset__desc2">
+              - The selected variables directly reflect meteorological factors
+              that are likely to affect daily rainfall in Hanoi.
+            </p>
+          </div>
+          <div class="page--1__datadesc" >
+            <div class="dd__header">Data description</div>
+            <ul>
+              <li class="desc__list">
+                <strong class="desc__strong">precip ( mm)</strong>: Average
+                total rainfall per day .
+              </li>
+              <li class="desc__list">
+                <strong class="desc__strong">temp ( °C)</strong>: Average daily
+                temperature.
+              </li>
+              <li class="desc__list">
+                <strong class="desc__strong">humidity ( %)</strong>: The level
+                of water vapor in the air.
+              </li>
+              <li class="desc__list">
+                <strong class="desc__strong">windspeed ( km/h)</strong>: Average
+                wind intensity during the day.
+              </li>
+              <li class="desc__list">
+                <strong class="desc__strong">precipprob ( %)</strong>: Forecast
+                probability of rain during the day.
+              </li>
+              <li class="desc__list">
+                <strong class="desc__strong">visibility ( km)</strong>: Average
+                viewing distance during the day
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer ft__page" >
+          <div class="ft__header">Factors affecting rainfall in Hanoi</div>
+          <p class="ft__num">01</p>
+        </div>
+      </div>
+      <div class="page--2">
+        <div class="page--2__header"  >
+          <div class="p-head2">
+            Time Series Variation of Rainfall in Hanoi (2015–2024)
+          </div>
+        </div>
+        <div class="page--2__stat">
+          <div class="page--2__chart"  >
+            <img src="./Assets/img/page2.jpg" alt="" class="page2__chart">
+          </div>
+          <div class="page--2__cmt"  >
+            <div class="cmt__header">Comment</div>
+            <p class="cmt__desc">
+              The graph clearly shows the seasonality of rainfall in Hanoi:
+            <p class="cmt__desc cmt__desc2">
+                - Peaks correspond to the rainy season (usually from May to October
+                in Northern Vietnam).
+            </p>
+            <p class="cmt__desc cmt__desc2">
+              - Periods of low rainfall correspond to the dry season (usually from November to April).
+            </p> 
+            <p class="cmt__desc">
+              Despite the seasonality, the variation between peaks within the same year is
+                also very large. This emphasizes the irregularity of Hanoi's
+                weather
+            </p>
+            </p>
+          </div>
+        </div>
+          <div class="footer ft__page" >
+          <div class="ft__header">Factors affecting rainfall in Hanoi</div>
+          <p class="ft__num">02</p>
+        </div>
+      </div>
+      <div class="page--3">
+        <div class="p3__header" >
+          <div class="p3__h1">Research and evaluation model</div>
+        </div>
+        <div class="p3--model" >
+          <div class="p3__rmodel">Research model</div>
+          <p class="p3__desc-model"><strong>Precip</strong> = β0 ​+ β1​Humidity + β2​WindSpeed + β3Temp + β4PrecipProb + β5​Visibility + ϵ
+</p>
+        </div>
+          <div class="page3--main">
+              <div class="multicol" >
+                <div class="mc__desc">
+                  <p class="mcoldesc">The independent variables in the model are not highly correlated with each other, indicating a low level of multicollinearity, and the linear regression model is appropriate.</p>
+                </div>
+                <div class="mc__chart">
+                  <img src="./Assets/img/page3_1.jpg" alt="" class="mcol--chart">
+                </div>
+              </div>
+              <div class="vif" >
+                <div class="vif--desc">
+                  <p class="vif__desc">The independent variables have VIF coefficients < 5, so there is no serious multicollinearity in the model.</p>
+                </div>
+                <div class="vif--chart">
+                  <img src="./Assets/img/page3_2.jpg" alt="" class="vif__chart">
+                </div>
+              </div>
+          </div>
+          <div class="footer ft__page">
+          <div class="ft__header">Factors affecting rainfall in Hanoi</div>
+          <p class="ft__num">03</p>
+        </div>
+      </div>
+      <div class="page--4">
+        <div class="p3__header">
+          <div class="p3__h1">Research and evaluation model</div>
+        </div>
+        <div class="p4--dw">
+          <div class="dw--chart">
+            <img src="./Assets/img/page4_1.jpg" alt="" class="dw__chart">
+          </div>
+          <div class="dw--desc">
+            <p class="dw__desc">The DW value = 1.6586 is within the acceptable range (1.5 to 2.5), this level of positive autocorrelation is considered mild to moderate and does not cause serious problems. The model has a statistically significant positive autocorrelation.</p>
+          </div>
+        </div>
+        <div class="p4--rsquare">
+          <div class="rsq--chart">
+            <img src="./Assets/img/page4_2.jpg" alt="" class="rsq__chart">
+          </div>
+          <div class="p4--rsq__desc">
+            <p class="rsq__desc">R-squared: 0.1129 means that the model explains about 11.29% of the variation in precip</p>
+          </div>
+        </div>
+        <div class="footer ft__page">
+          <div class="ft__header">Factors affecting rainfall in Hanoi</div>
+          <p class="ft__num">04</p>
+      </div>
+      </div>
+      <div class="page--5">
+        <div class="p5__header" >
+          <div class="p3__h1">Meaning of model coefficients</div>
+        </div>
+        <div class="p5--main">
+          <div class="p5--img">
+            <img src="./Assets/img/page5.jpg" alt="" class="p5__chart">
+          </div>
+          <div class="p5--desc" >
+            <div class="p5--desc__header">Meaning of coefficients</div>
+            <p class="p5__desc">Other factors remain constant:</p>
+            <ul>
+              <li class="p5--desc__list desc1">- <strong>humidity</strong>: When humidity increases by 1%, expected rainfall increases by about 0.492 mm, keeping other factors constant.</li>
+              <li class="p5--desc__list desc2">- <strong>visibility</strong>: When visibility decreases by 1 km, expected rainfall increases by about 1.484 mm.</li>
+              <li class="p5--desc__list desc3">- <strong>windspeed</strong>: When wind speed increases by 1 km/h, expected rainfall increases by about 0.343 mm.</li>
+              <li class="p5--desc__list desc4">- <strong>precipprob</strong>: When the probability of forecasted rain increases by 1%, expected rainfall increases by 0.01 mm.</li>
+              <li class="p5--desc__list desc5">- <strong>temp</strong>: When temperature (temp) increases by 1°C, predicted rainfall decreases by 0.088 mm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer ft__page" >
+          <div class="ft__header">Factors affecting rainfall in Hanoi</div>
+          <p class="ft__num">05</p>
+      </div>
+      </div>
+      <div class="page--6">
+        <div class="p5__header" >
+          <div class="p3__h1">Conclusion and Interpretation</div>
+        </div>
+        <div class="p5--main">
+          <div class="p6--img">
+            <img src="./Assets/img/page6.jpg" alt="" class="p6__chart">
+          </div>
+          <div class="p6--desc" >
+            <div class="p5--desc__header p6--header">Conclusion and Interpretation
+</div>
+            <p class="p6__desc">The model has an Adjusted R² = 11.17%, meaning that the meteorological variables in the model only explain about 11% of the rainfall variation in Hanoi.
+</p>
+            <p class="p6__desc">Despite the low level of explanation, the overall regression is still statistically significant (F-test p < 0.001), showing that the included variables have a real relationship with rainfall, not a random one.
+</p>
+            <p class="p6__desc">This is reasonable because rainfall is affected by many complex atmospheric processes (pressure, monsoon, convection, ENSO...) that are not in the data, so the model only explains a small part of the actual variation.
+</p>
+          </div>
+        </div>
+        <div class="footer ft__page" >
+           <div class="ft__header">View and download PDF <a href="https://drive.google.com/file/d/1IxaUS-dTI_OMY7f4VixIF31td6Fd9Tk0/view?usp=sharing" target="_blank">here</a></div>
+          <p class="ft__num">06</p>
+      </div>
+      </div>
+    </div>
+    <!-- AOS -->
+    
+     <script>
+      alert("Đây là bản web bài cá nhân R của Khánh");
+      alert("Mở bằng máy tính để không bị vỡ giao diện :) ");
+     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: 'animate__animated',});
+    </script>
+  </body>
+</html>
