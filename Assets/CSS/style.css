@@ -157,82 +157,82 @@ h1.data--intro {
   /* margin-right: 3px; */
 }
 .rsqt__2 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .page--1__src {
-  width: 370px;
-  height: 56px;
+  width: 37rem;
+  height: 5.6rem;
   background-color: var(--bg-color);
   border-radius: var(--border-radius);
-  margin-top: 49px;
-  margin-left: 15px;
+  margin-top: 4.9rem;
+  margin-left: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .scr__header {
   display: inline-block;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--font--color);
 }
 .page--1__about {
   color: var(--font--color);
-  font-size: 27px;
+  font-size: 2.7rem;
   font-weight: bold;
-  margin-top: 191px;
-  margin-left: 44px;
+  margin-top: 19.1rem;
+  margin-left: 4.4rem;
 }
 .page--1__dataset {
-  width: 343px;
-  height: 269px;
+  width: 34.3rem;
+  height: 26.9rem;
   background-color: var(--bg-color);
   border-radius: var(--border-radius);
-  margin-left: 28px;
-  margin-top: 31px;
+  margin-left: 2.8rem;
+  margin-top: 3.1rem;
 }
 .dataset__header {
   color: var(--font--color);
   font-size: var(--fs-page2);
   font-weight: bold;
   display: inline-block;
-  margin-top: 20px;
-  margin-left: 18px;
+  margin-top: 2rem;
+  margin-left: 1.8rem;
 }
 .dataset__desc {
-  margin-top: 10px;
-  font-size: 18px;
-  margin-left: 52px;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  margin-left: 5.2rem;
   line-height: 1.5;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 .dataset__desc2 {
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 .page--1__datadesc {
   background-color: var(--bg-color);
   border-radius: var(--border-radius);
-  height: 457px;
-  width: 343px;
-  margin-left: 28px;
-  margin-top: 25px;
+  height: 45.7rem;
+  width: 34.3rem;
+  margin-left: 2.8rem;
+  margin-top: 2.5rem;
 }
 .dd__header {
   display: inline-block;
   color: var(--font--color);
   font-weight: bold;
   font-size: var(--fs-page2);
-  margin-top: 18px;
-  margin-left: 18px;
+  margin-top: 1.8rem;
+  margin-left: 1.8rem;
 }
 .desc__strong {
   font-weight: bold;
 }
 .desc__list {
-  margin-left: 36px;
-  font-size: 20px;
+  margin-left: 3.6rem;
+  font-size: 2rem;
   line-height: 1.5;
-  margin-top: 9px;
+  margin-top: 0.9rem;
 }
 
 /* Footer */
@@ -241,8 +241,8 @@ h1.data--intro {
   right: 0;
   bottom: 0;
   background-color: #d9d9d9;
-  width: 492px;
-  height: 60px;
+  width: 49.2rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -252,22 +252,22 @@ h1.data--intro {
   color: var(--font--color);
   font-weight: bold;
   /* margin-top: 23px; */
-  margin-left: 24px;
+  margin-left: 2.4rem;
 }
 .ft__num {
   font-size: var(--fs-footer);
   font-weight: bold;
-  margin-left: 66px;
-  border-left: 2px solid #5e17eb;
-  padding-left: 30px;
+  margin-left: 6.5rem;
+  border-left: 0.2px solid #5e17eb;
+  padding-left: 3rem;
 }
 /* =================page 2=================== */
 .page--2 {
-  margin-top: 15px;
+  margin-top: 1.5rem;
   position: relative;
-  border: 2px solid black;
-  width: 794px;
-  height: 1123px;
+  border: 0.2rem solid black;
+  width: 79.4rem;
+  height: 112.3rem;
   display: flex;
   flex-direction: column;
 }
