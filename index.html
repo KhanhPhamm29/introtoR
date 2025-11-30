@@ -240,7 +240,7 @@
         </div>
         <div class="p3--model" >
           <div class="p3__rmodel">Research model</div>
-          <p class="p3__desc-model"><strong>Precip</strong> = β0 ​+ β1​Humidity + β2​WindSpeed + β3Temp + β4PrecipProb + β5​Visibility + ϵ
+          <p class="p3__desc-model"><strong>ln(Precip+1)</strong> = β0 ​+ β1​Humidity + β2​WindSpeed + β3Temp + β4PrecipProb + β5​Visibility + ϵ
 </p>
         </div>
           <div class="page3--main">
@@ -266,16 +266,54 @@
           <p class="ft__num">03</p>
         </div>
       </div>
+      <div class="page--3__5">
+        <div class="p3__header p3--5__header" >
+          <div class="p3__h1">Research and evaluation model</div>
+        </div>
+        <div class="page3-5__main">
+          <img src="./Assets/img/SW.jpg" alt="" class="page3-5__SW">
+          <div class="page3-5__desc">
+            <p class="p3-5__desc">The value W = 0.92 is a relatively high value (close to 1), indicating that the distribution shape of the residuals is close to the theoretical normal distribution.</p>
+          </div>
+          <img src="./Assets/img/QQ.jpg" alt="" class="page3-5__QQ">
+          <div class="p3--QQ__desc">
+            <p class="QQ__desc">The QQ Plot shows that the data points in the center of the distribution lie very close to the straight line, indicating that the majority of the residuals follow a normal distribution.</p>
+          </div>
+        </div>
+        <div class="footer ft__page">
+          <div class="ft__header">Factors affecting rainfall in Hanoi</div>
+          <p class="ft__num">04</p>
+        </div>
+      </div>
+      <div class="page--3__6">
+        <div class="p3__header" >
+          <div class="p3__h1">Research and evaluation model</div>
+        </div>
+        <div class="page--3-6__main">
+          <img src="./Assets/img/HIST.jpg" alt="" class="p3-6__his">
+          <div class="p3-6__histdesc">
+            <p class="hist--desc">Histogram plot show that the distribution is still slightly positively skewed.</p>
+          </div>
+          <img src="./Assets/img/BP.jpg" alt="" class="BP--test">
+          <div class="p3--BPdesc">
+            <p class="BP--desc">The Breusch-Pagan test shows that the model has heteroscedasticity (p-value < 5%)</p>
+          </div>
+        </div>
+        <div class="footer ft__page">
+          <div class="ft__header">Factors affecting rainfall in Hanoi</div>
+          <p class="ft__num">05</p>
+        </div>
+      </div>
       <div class="page--4">
         <div class="p3__header">
           <div class="p3__h1">Research and evaluation model</div>
         </div>
         <div class="p4--dw">
           <div class="dw--chart">
-            <img src="./Assets/img/page4_1.jpg" alt="" class="dw__chart">
+            <img src="./Assets/img/DW.jpg" alt="" class="dw__chart">
           </div>
           <div class="dw--desc">
-            <p class="dw__desc">The DW value = 1.6586 is within the acceptable range (1.5 to 2.5), this level of positive autocorrelation is considered mild to moderate and does not cause serious problems. The model has a statistically significant positive autocorrelation.</p>
+            <p class="dw__desc">The QQ plot and Histogram plot show that the distribution is still slightly positively skewed. The DW value shows that it is affected by Concerning Positive Autocorrelation combined with the Breusch-Pagan Test shows that the model suffers from heteroscedasticity and needs to be corrected using Newey-West.</p>
           </div>
         </div>
         <div class="p4--rsquare">
@@ -283,12 +321,12 @@
             <img src="./Assets/img/page4_2.jpg" alt="" class="rsq__chart">
           </div>
           <div class="p4--rsq__desc">
-            <p class="rsq__desc">R-squared: 0.1129 means that the model explains about 11.29% of the variation in precip</p>
+            <p class="rsq__desc">Adjusted R-squared: 0.308 means that the model explains about 30.8% of the variation in precip</p>
           </div>
         </div>
         <div class="footer ft__page">
           <div class="ft__header">Factors affecting rainfall in Hanoi</div>
-          <p class="ft__num">04</p>
+          <p class="ft__num">06</p>
       </div>
       </div>
       <div class="page--5">
@@ -296,25 +334,25 @@
           <div class="p3__h1">Meaning of model coefficients</div>
         </div>
         <div class="p5--main">
-        <!-- Nghịch bới Khánh :)) -->
+        
           <div class="p5--img">
             <img src="./Assets/img/page5.jpg" alt="" class="p5__chart">
           </div>
           <div class="p5--desc" >
             <div class="p5--desc__header">Meaning of coefficients</div>
-            <p class="p5__desc">Other factors remain constant:</p>
+            <p class="p5__desc">Regression results after using Newey-West, other factors remain constant:</p>
             <ul>
-              <li class="p5--desc__list desc1">- <strong>humidity</strong>: When humidity increases by 1%, expected rainfall increases by about 0.492 mm, keeping other factors constant.</li>
-              <li class="p5--desc__list desc2">- <strong>visibility</strong>: When visibility decreases by 1 km, expected rainfall increases by about 1.484 mm.</li>
-              <li class="p5--desc__list desc3">- <strong>windspeed</strong>: When wind speed increases by 1 km/h, expected rainfall increases by about 0.343 mm.</li>
-              <li class="p5--desc__list desc4">- <strong>precipprob</strong>: When the probability of forecasted rain increases by 1%, expected rainfall increases by 0.01 mm.</li>
-              <li class="p5--desc__list desc5">- <strong>temp</strong>: When temperature (temp) increases by 1°C, predicted rainfall decreases by 0.088 mm</li>
+              <li class="p5--desc__list desc1">- <strong>humidity</strong>: When humidity increases by 1%, expected rainfall increases by about 0.046 mm, keeping other factors constant.</li>
+              <li class="p5--desc__list desc2">- <strong>visibility</strong>: When visibility decreases by 1 km, expected rainfall increases by about 0.19 mm.</li>
+              <li class="p5--desc__list desc3">- <strong>windspeed</strong>: When wind speed increases by 1 km/h, expected rainfall increases by about 0.011 mm.</li>
+              <li class="p5--desc__list desc4">- <strong>precipprob</strong>: When the probability of forecasted rain increases by 1%, expected rainfall increases by 0.006 mm.</li>
+              <li class="p5--desc__list desc5">- <strong>temp</strong>: When temperature (temp) increases by 1°C, predicted rainfall decreases by 0.01 mm.</li>
             </ul>
           </div>
         </div>
         <div class="footer ft__page" >
           <div class="ft__header">Factors affecting rainfall in Hanoi</div>
-          <p class="ft__num">05</p>
+          <p class="ft__num">07</p>
       </div>
       </div>
       <div class="page--6">
@@ -328,7 +366,8 @@
           <div class="p6--desc" >
             <div class="p5--desc__header p6--header">Conclusion and Interpretation
 </div>
-            <p class="p6__desc">The model has an Adjusted R² = 11.17%, meaning that the meteorological variables in the model only explain about 11% of the rainfall variation in Hanoi.
+            <p class="p6__desc">The model has an Adjusted R² = 30.8%, meaning that the meteorological variables in the model only explain about 30.8% of the rainfall variation in Hanoi.
+
 </p>
             <p class="p6__desc">Despite the low level of explanation, the overall regression is still statistically significant (F-test p < 0.001), showing that the included variables have a real relationship with rainfall, not a random one.
 </p>
@@ -337,15 +376,16 @@
           </div>
         </div>
         <div class="footer ft__page" >
-           <div class="ft__header">View and download PDF <a href="https://drive.google.com/file/d/1j6nCHVFqOou6rTrrLq5fBoQI-Dfa76v8/view?usp=sharing" target="_blank">here</a></div>
-          <p class="ft__num">06</p>
+           <div class="ft__header">View and download PDF <a href="https://drive.google.com/drive/folders/12uc1UADuugr3ViXOwjf7ECfvK0OwQOi9?usp=drive_link" target="_blank">here</a></div>
+          <p class="ft__num">08</p>
       </div>
       </div>
     </div>
      <script>
-      alert("Đây là bản web bài cá nhân R của Khánh");
+      alert("Đây là bản web bài cá nhân R của Khánh.");
       alert("Mở bằng máy tính để không bị vỡ giao diện.");
      </script>
+     <!-- Nghịch bới Khánh :)) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js">
     </script>
     <script>
